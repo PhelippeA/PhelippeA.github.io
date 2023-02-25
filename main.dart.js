@@ -70101,7 +70101,7 @@ A.xx.prototype={
 a5(){return new A.Av(new A.bw(null,t.am),B.k)}}
 A.Av.prototype={
 J(a){var s=null,r=A.cd(s,A.cM("Nosso quiz",s,s,s,A.dz(s,s,B.h,s,s,s,s,s,s,s,s,50,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),s,s),s,s,s,new A.ak(0,150,0,300),s,s),q=this.W2()
-return A.jC(s,A.cd(s,A.fo(A.hs(!0,A.c7(A.a([r,A.alU(A.cd(s,new A.uE(q,B.x5,this.d),s,s,s,new A.ak(15,15,15,15),s,s))],t.p),B.M,B.v),!0),s,s),B.aQ,s,s,s,s,s),s)},
+return A.jC(s,A.cd(s,A.fo(A.hs(!0,A.c7(A.a([r,A.alU(A.cd(s,new A.uE(q,B.x5,this.d),s,s,s,new A.ak(15,15,15,15),s,s))],t.p),B.M,B.v),!0),s,s),B.aQ,s,1/0,s,s,s),s)},
 W2(){var s=null
 return A.c7(A.a([A.avF(B.Bk,new A.add(this),this.ga3h()),B.Ig,A.WQ(B.MR,this.ga1x(),A.Ex(s,s,B.V,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],t.p),B.M,B.v)},
 a3i(a){if(a.length===0)return"Informe o apelido"
