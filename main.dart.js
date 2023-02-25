@@ -11594,7 +11594,7 @@ _.d=d
 _.e=e
 _.f=f},
 NX:function NX(){},
-jy(a,b,c){return new A.wL(a,b,c,null)},
+jy(a,b,c,d){return new A.wL(a,b,c,d,null)},
 I0(a){var s=a.k0(t.Np)
 if(s!=null)return s
 throw A.e(A.EP(A.a([A.oW("Scaffold.of() called with a context that does not contain a Scaffold."),A.bh("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.WY('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.WY("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.a58("The context used was")],t.F)))},
@@ -11691,11 +11691,12 @@ _.b=c
 _.c=null},
 a9I:function a9I(a,b){this.a=a
 this.b=b},
-wL:function wL(a,b,c,d){var _=this
+wL:function wL(a,b,c,d,e){var _=this
 _.e=a
 _.f=b
 _.r=c
-_.a=d},
+_.cy=d
+_.a=e},
 q0:function q0(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p){var _=this
 _.d=a
 _.e=b
@@ -44859,8 +44860,8 @@ YP(){var s,r=this.c
 r.toString
 s=A.a0W(r)
 if(s!=null&&s.d.length!==0)s.i3(0,B.zG,B.e1)},
-gm5(){this.a.toString
-return!0},
+gm5(){var s=this.a.cy
+return s!==!1},
 az(){var s,r=this,q=null
 r.aS()
 s=r.c
@@ -44908,70 +44909,63 @@ nW(a,b,c,d,e,f,g){return this.wV(a,b,c,!1,!1,d,e,f,g)},
 El(a,b,c,d,e,f,g,h){return this.wV(a,b,c,d,!1,e,f,g,h)},
 EE(a,b){this.a.toString},
 ED(a,b){this.a.toString},
-J(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g={},f=a.T(t.w).f,e=A.a8(a),d=a.T(t.I)
-d.toString
-s=d.w
+J(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h={},g=a.T(t.w).f,f=A.a8(a),e=a.T(t.I)
+e.toString
+s=e.w
 r=A.a([],t.s9)
-d=i.a
-q=d.f
-d=d.e
-i.gm5()
-i.Td(r,new A.K7(new A.pj(q,i.f),!1,!1,h),B.fq,!0,!1,!1,!1,d!=null)
-if(i.dy)i.nW(r,new A.vy(i.fr,!1,h,!0,h,h),B.ft,!0,!0,!0,!0)
-d=i.a.e
-if(d!=null){d=i.r=A.are(a,d.go)+f.f.b
-q=i.a.e
+e=j.a
+q=e.f
+e=e.e
+j.Td(r,new A.K7(new A.pj(q,j.f),!1,!1,i),B.fq,j.gm5(),!1,!1,!1,e!=null)
+if(j.dy)j.nW(r,new A.vy(j.fr,!1,i,!0,i,i),B.ft,!0,!0,!0,!0)
+e=j.a.e
+if(e!=null){e=j.r=A.are(a,e.go)+g.f.b
+q=j.a.e
 q.toString
-i.nW(r,new A.eY(new A.aA(0,1/0,0,d),new A.up(1,d,d,d,h,q,h),h),B.fr,!0,!1,!1,!1)}g.a=!1
-g.b=null
-if(i.at!=null||i.as.length!==0){d=A.ay(i.as,!0,t.l7)
-q=i.at
-if(q!=null)d.push(q.a)
-p=A.xm(B.wU,d,B.a_,B.dA)
-i.gm5()
-i.nW(r,p,B.fu,!0,!1,!1,!0)}d=i.z
-if(d!=null){g.a=!1
-g.b=e.da.w
-d=d.a
-i.a.toString
-i.gm5()
-i.El(r,d,B.cA,!1,!1,!1,!1,!0)}g.c=!1
-if(i.Q!=null){a.T(t.iB)
-d=A.a8(a)
-q=i.Q
+j.nW(r,new A.eY(new A.aA(0,1/0,0,e),new A.up(1,e,e,e,i,q,i),i),B.fr,!0,!1,!1,!1)}h.a=!1
+h.b=null
+if(j.at!=null||j.as.length!==0){e=A.ay(j.as,!0,t.l7)
+q=j.at
+if(q!=null)e.push(q.a)
+j.nW(r,A.xm(B.wU,e,B.a_,B.dA),B.fu,j.gm5(),!1,!1,!0)}e=j.z
+if(e!=null){h.a=!1
+h.b=f.da.w
+e=e.a
+j.a.toString
+j.El(r,e,B.cA,!j.gm5(),!1,!1,!1,!0)}h.c=!1
+if(j.Q!=null){a.T(t.iB)
+e=A.a8(a)
+q=j.Q
 if(q!=null){q=q.a
-q.gep(q)}o=d.rx.f
-g.c=(o==null?0:o)!==0
-d=i.Q
-d=d==null?h:d.a
-q=i.a.e
-i.gm5()
-i.El(r,d,B.fv,!1,!0,!1,!1,q!=null)}d=i.a
-d.toString
-q=i.ch
+q.gep(q)}p=e.rx.f
+h.c=(p==null?0:p)!==0
+e=j.Q
+e=e==null?i:e.a
+q=j.a.e
+j.El(r,e,B.fv,!j.gm5(),!0,!1,!1,q!=null)}e=j.a
+e.toString
+q=j.ch
 q===$&&A.b()
-n=i.CW
+o=j.CW
+o===$&&A.b()
+n=j.dx
 n===$&&A.b()
-m=i.dx
+m=j.db
 m===$&&A.b()
-l=i.db
-l===$&&A.b()
-i.nW(r,new A.yR(d.r,q,n,m,l,h),B.fw,!0,!0,!0,!0)
-switch(e.r.a){case 2:case 4:i.nW(r,A.uz(B.as,h,B.aS,!0,h,h,h,h,h,h,h,h,h,h,h,i.gYO(),h,h,h,h,h,h),B.fs,!0,!1,!1,!0)
+j.nW(r,new A.yR(e.r,q,o,n,m,i),B.fw,!0,!0,!0,!0)
+switch(f.r.a){case 2:case 4:j.nW(r,A.uz(B.as,i,B.aS,!0,i,i,i,i,i,i,i,i,i,i,i,j.gYO(),i,i,i,i,i,i),B.fs,!0,!1,!1,!0)
 break
-case 0:case 1:case 3:case 5:break}d=i.x
-q=d.y
-if(q==null?A.m(d).k("bF.T").a(q):q){i.ED(r,s)
-i.EE(r,s)}else{i.EE(r,s)
-i.ED(r,s)}i.gm5()
-d=f.e.d
-k=f.f.tV(d)
-i.gm5()
-d=d!==0?0:h
-j=f.r.tV(d)
-if(k.d<=0)i.a.toString
-i.a.toString
-return new A.OB(!1,new A.wV(A.mB(B.O,h,A.iQ(i.ch,new A.a3h(g,i,!1,k,j,s,r),h),B.F,e.go,0,h,h,h,h,h,B.db),h),h)}}
+case 0:case 1:case 3:case 5:break}e=j.x
+q=e.y
+if(q==null?A.m(e).k("bF.T").a(q):q){j.ED(r,s)
+j.EE(r,s)}else{j.EE(r,s)
+j.ED(r,s)}e=j.gm5()?g.e.d:0
+l=g.f.tV(e)
+e=j.gm5()&&g.e.d!==0?0:i
+k=g.r.tV(e)
+if(l.d<=0)j.a.toString
+j.a.toString
+return new A.OB(!1,new A.wV(A.mB(B.O,i,A.iQ(j.ch,new A.a3h(h,j,!1,l,k,s,r),i),B.F,f.go,0,i,i,i,i,i,B.db),i),i)}}
 A.a3g.prototype={
 $0(){this.a.z=this.b},
 $S:0}
@@ -69677,7 +69671,7 @@ $0(){A.at4(this.b,this.a.d)},
 $S:0}
 A.pl.prototype={
 J(a){var s=null
-return A.jy(A.ka(B.V,0,A.dM(s,A.dY(B.be,B.h,s),s,new A.ZP(a),s),s),A.ca(s,A.c5(A.a([new A.cZ(new A.aj(0,50,0,50),A.cJ("Happy Happy Happy",s,s,s,A.dv(s,s,B.h,s,s,s,s,s,s,s,s,30,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),B.dE,s),s),new A.uI(A.auP(s,s,new A.pC("https://media.tenor.com/zxrwAu5HtBMAAAAd/baby-dancing.gif",1,s)),s)],t.p),B.M,B.v),B.aQ,s,s,s,s,17976931348623157e292),s)}}
+return A.jy(A.ka(B.V,0,A.dM(s,A.dY(B.be,B.h,s),s,new A.ZP(a),s),s),A.ca(s,A.c5(A.a([new A.cZ(new A.aj(0,50,0,50),A.cJ("Happy Happy Happy",s,s,s,A.dv(s,s,B.h,s,s,s,s,s,s,s,s,30,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),B.dE,s),s),new A.uI(A.auP(s,s,new A.pC("https://media.tenor.com/zxrwAu5HtBMAAAAd/baby-dancing.gif",1,s)),s)],t.p),B.M,B.v),B.aQ,s,s,s,s,17976931348623157e292),s,s)}}
 A.ZP.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69694,7 +69688,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("1 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a15(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a16(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Dia que voc\xea roubou o primeiro beijinho ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("25/02/2022",!0,q),new A.c6("16/02/2022",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("01/02/2022",!1,q),new A.c6("02/03/2022",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Dia que voc\xea roubou o primeiro beijinho ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("25/02/2022",!0,q),new A.c6("16/02/2022",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("01/02/2022",!1,q),new A.c6("02/03/2022",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a15.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69712,7 +69706,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("2 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a18(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a19(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Onde foi nosso primeiro encontro ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("Shopping - Monte Carmo",!1,q),new A.c6("Shopping - Partage",!0,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Kart",!1,q),new A.c6("Meu Churros",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Onde foi nosso primeiro encontro ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("Shopping - Monte Carmo",!1,q),new A.c6("Shopping - Partage",!0,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Kart",!1,q),new A.c6("Meu Churros",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a18.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69730,7 +69724,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("3 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a1b(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a1c(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Quantas vezes a gente foi no parque juntos ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("2",!1,q),new A.c6("1",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("3",!0,q),new A.c6("4",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Quantas vezes a gente foi no parque juntos ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("2",!1,q),new A.c6("1",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("3",!0,q),new A.c6("4",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a1b.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69748,7 +69742,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("4 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a1e(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a1f(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Quanto de armazenamento nossas conversas do whatsapp ocupam atualmente ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("430Mb",!1,q),new A.c6("2Gb",!0,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("760Mb",!1,q),new A.c6("1.2Gb",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Quanto de armazenamento nossas conversas do whatsapp ocupam atualmente ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("430Mb",!1,q),new A.c6("2Gb",!0,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("760Mb",!1,q),new A.c6("1.2Gb",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a1e.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69766,7 +69760,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("5 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a1h(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a1i(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Qual o primeiro filme ou s\xe9rie que assistimos juntos ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("The Rain",!1,q),new A.c6("Barbie princesas bailarinas",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Emily in Paris",!0,q),new A.c6("Um dia",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Qual o primeiro filme ou s\xe9rie que assistimos juntos ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("The Rain",!1,q),new A.c6("Barbie princesas bailarinas",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Emily in Paris",!0,q),new A.c6("Um dia",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a1h.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69784,7 +69778,7 @@ J(a){var s,r,q=null,p=A.fl(A.cJ("6 de 7",q,q,q,q,q,q),q,q)
 p=A.ka(B.V,0,A.dM(q,A.dY(B.be,B.h,q),q,new A.a1k(a),q),p)
 s=A.dM(B.h,A.dY(B.bQ,B.h,30),q,new A.a1l(a),q)
 r=t.p
-return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Qual o nome do nosso canal de voz no discord ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("Sessao de filme da barbie",!1,q),new A.c6("aleatoriedades",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Canal de ASMR",!0,q),new A.c6("sei lakkk",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s)}}
+return A.jy(p,A.ca(q,A.hp(!0,A.c5(A.a([new A.ii("Qual o nome do nosso canal de voz no discord ?",q),A.cO(A.ca(q,A.jx(A.a([A.cO(A.c5(A.a([new A.c6("Sessao de filme da barbie",!1,q),new A.c6("aleatoriedades",!1,q)],r),B.az,B.v),1),A.cO(A.c5(A.a([new A.c6("Canal de ASMR",!0,q),new A.c6("sei lakkk",!1,q)],r),B.az,B.v),1)],r),B.aR,B.M,B.v),B.V,q,q,q,new A.aj(0,20,0,20),q),1)],r),B.M,B.v),!0),B.aQ,q,q,q,q,q),s,q)}}
 A.a1k.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69799,7 +69793,7 @@ A.n0.prototype={
 a4(){return new A.H9(B.k)}}
 A.H9.prototype={
 J(a){var s=null,r=A.fl(A.cJ("7 de 7",s,s,s,s,s,s),s,s),q=t.p
-return A.jy(A.ka(B.V,0,A.dM(s,A.dY(B.be,B.h,s),s,new A.a1n(a),s),r),A.ca(s,A.hp(!0,A.c5(A.a([new A.ii("Namora comigo ?",s),A.cO(A.ca(s,A.jx(A.a([A.cO(A.c5(A.a([A.Ww(A.cJ("Sim",s,s,s,A.dv(s,s,B.hV,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a1o(a),A.Em(s,s,B.h,s,s,s,s,s,s,s,s,s,new A.aj(10,10,10,10),s,new A.c_(A.Ca(10),B.q),s,s,s,s)),A.Ww(A.cJ("N\xe3o, rs",s,s,s,A.dv(s,s,B.hV,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s,A.Em(s,s,B.h,s,s,s,s,s,s,s,s,s,new A.aj(10,10,10,10),s,new A.c_(A.Ca(10),B.q),s,s,s,s))],q),B.az,B.v),1)],q),B.aR,B.M,B.v),B.V,s,s,s,new A.aj(0,20,0,20),s),1)],q),B.M,B.v),!0),B.aQ,s,s,s,s,s),s)}}
+return A.jy(A.ka(B.V,0,A.dM(s,A.dY(B.be,B.h,s),s,new A.a1n(a),s),r),A.ca(s,A.hp(!0,A.c5(A.a([new A.ii("Namora comigo ?",s),A.cO(A.ca(s,A.jx(A.a([A.cO(A.c5(A.a([A.Ww(A.cJ("Sim",s,s,s,A.dv(s,s,B.hV,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.a1o(a),A.Em(s,s,B.h,s,s,s,s,s,s,s,s,s,new A.aj(10,10,10,10),s,new A.c_(A.Ca(10),B.q),s,s,s,s)),A.Ww(A.cJ("N\xe3o, rs",s,s,s,A.dv(s,s,B.hV,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),s,A.Em(s,s,B.h,s,s,s,s,s,s,s,s,s,new A.aj(10,10,10,10),s,new A.c_(A.Ca(10),B.q),s,s,s,s))],q),B.az,B.v),1)],q),B.aR,B.M,B.v),B.V,s,s,s,new A.aj(0,20,0,20),s),1)],q),B.M,B.v),!0),B.aQ,s,s,s,s,s),s,s)}}
 A.a1n.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
@@ -69814,7 +69808,7 @@ A.xp.prototype={
 a4(){return new A.Aj(new A.bu(null,t.am),B.k)}}
 A.Aj.prototype={
 J(a){var s=null,r=A.ca(s,A.cJ("Nosso quiz",s,s,s,A.dv(s,s,B.h,s,s,s,s,s,s,s,s,50,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),s,s),s,s,s,new A.aj(0,150,0,300),s,s),q=this.VW()
-return A.jy(s,A.ca(s,A.fl(A.hp(!0,A.c5(A.a([r,A.alO(A.ca(s,new A.uw(q,B.x5,this.d),s,s,s,new A.aj(15,15,15,15),s,s))],t.p),B.M,B.v),!0),s,s),B.aQ,s,1/0,s,s,s),s)},
+return A.jy(s,A.ca(s,A.fl(A.hp(!0,A.c5(A.a([r,A.alO(A.ca(s,new A.uw(q,B.x5,this.d),s,s,s,new A.aj(15,15,15,15),s,s))],t.p),B.M,B.v),!0),s,s),B.aQ,s,1/0,s,s,s),s,!1)},
 VW(){var s=null
 return A.c5(A.a([A.avv(B.Bk,new A.acV(this),this.ga38()),B.Ig,A.Ww(B.MR,this.ga1o(),A.Em(s,s,B.V,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],t.p),B.M,B.v)},
 a39(a){if(a.length===0)return"Informe o apelido"
@@ -69844,7 +69838,7 @@ A.nr.prototype={
 a4(){return new A.IF(B.k)}}
 A.IF.prototype={
 J(a){var s=null,r=A.ka(B.V,0,A.dM(s,A.dY(B.be,B.h,s),s,new A.a6j(a),s),s),q=A.dM(B.h,A.dY(B.bQ,B.h,30),s,new A.a6k(a),s),p=t.p
-return A.jy(r,A.alO(A.ca(s,A.hp(!0,A.c5(A.a([A.cO(A.ca(s,A.fl(A.c5(A.a([A.cJ("Antes de passar pra pr\xf3xima pergunta, queria tomar um segundinho seu pra te agradecer... \n\n\nObrigado meu bem, por todas as mensagens de carinho e cuidado trocadas nesses 12 meses juntos. Obrigado tamb\xe9m por todo o tempo de qualidade assistindo filmes e s\xe9ries juntos, al\xe9m de todas as risadas compartilhadas e beijinhos roubados... Obrigado meu bem, por ser a minha melhor amiga e namorada. \n\n\n Quero te dizer que te amo muito e que desde que te vi pela primeira vez eu me encantei por voc\xea, e mesmo depois de todos esses anos, ainda me pego admirando a sua beleza como se nunca tivesse te visto antes. \n\n\nQuero te amar ainda mais, meu bem, mais a cada dia e dividir contigo al\xe9m de novos momentos de alegria, meus sonhos e planos futuros.\n\n\nTe amo babe <3",s,s,s,A.dv(s,s,B.h,s,s,s,s,s,s,s,s,20,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),B.dE,s)],p),B.M,B.v),s,s),s,s,s,new A.aj(10,10,10,10),new A.aj(10,10,10,10),s),1)],p),B.M,B.v),!0),B.aQ,s,1400,s,s,s)),q)}}
+return A.jy(r,A.alO(A.ca(s,A.hp(!0,A.c5(A.a([A.cO(A.ca(s,A.fl(A.c5(A.a([A.cJ("Antes de passar pra pr\xf3xima pergunta, queria tomar um segundinho seu pra te agradecer... \n\n\nObrigado meu bem, por todas as mensagens de carinho e cuidado trocadas nesses 12 meses juntos. Obrigado tamb\xe9m por todo o tempo de qualidade assistindo filmes e s\xe9ries juntos, al\xe9m de todas as risadas compartilhadas e beijinhos roubados... Obrigado meu bem, por ser a minha melhor amiga e namorada. \n\n\n Quero te dizer que te amo muito e que desde que te vi pela primeira vez eu me encantei por voc\xea, e mesmo depois de todos esses anos, ainda me pego admirando a sua beleza como se nunca tivesse te visto antes. \n\n\nQuero te amar ainda mais, meu bem, mais a cada dia e dividir contigo al\xe9m de novos momentos de alegria, meus sonhos e planos futuros.\n\n\nTe amo babe <3",s,s,s,A.dv(s,s,B.h,s,s,s,s,s,s,s,s,20,s,s,B.bc,s,s,!0,s,s,s,s,s,s,s,s),B.dE,s)],p),B.M,B.v),s,s),s,s,s,new A.aj(10,10,10,10),new A.aj(10,10,10,10),s),1)],p),B.M,B.v),!0),B.aQ,s,1400,s,s,s)),q,s)}}
 A.a6j.prototype={
 $0(){A.dm(this.a).c8()},
 $S:0}
